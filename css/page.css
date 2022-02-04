@@ -94,6 +94,9 @@ section .animation-delay-1 {
 section .animation-delay-2 {
   animation-delay: 1s;
 }
+section .animation-delay-3 {
+  animation-delay: 1.5s;
+}
 
 .menu-item-desc {
   padding: 10px;

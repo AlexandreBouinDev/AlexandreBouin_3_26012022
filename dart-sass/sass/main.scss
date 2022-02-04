@@ -1,0 +1,92 @@
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 200px;
+    margin: 20px;
+  }
+
+  p {
+    font-weight: bold;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    background: #eaeaea;
+    box-shadow: inset 0px 4px 4px #bbb;
+  }
+}
+
+footer {
+  background: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 10px;
+  font-size: 12px;
+
+  img {
+    align-self: flex-start;
+    height: 12px;
+    padding: 10px 0;
+    filter: invert(100%);
+  }
+}
+
+/* COMMONS */
+.fa-heart {
+  cursor: pointer;
+  font-size: 26px;
+  padding: 0 20px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #767676;
+  background: linear-gradient(to top, #ff79da 0%, #9356dc 50%, white 50%);
+  background-size: 100% 200%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  transition: 0.5s all;
+
+  &:hover {
+    background-position-y: bottom;
+    -webkit-text-stroke-color: transparent;
+    transition: 0.5s all;
+  }
+}
+
+.pinkbutton {
+  align-self: center;
+  cursor: pointer;
+  margin: 20px;
+  height: 40px;
+  max-width: 300px;
+  padding: 0 20px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
+  color: white;
+  border: none;
+  box-shadow: 0px 5px 5px #ddd;
+  position: relative;
+  top: 0;
+  transition: ease 0.5s;
+  &:hover {
+    top: -4px;
+    box-shadow: 0px 5px 5px #aaa;
+  }
+}

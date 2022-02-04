@@ -16,12 +16,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-
 header img {
   width: 200px;
   margin: 20px;
 }
-
 header p {
   font-weight: bold;
   width: 100%;
@@ -40,7 +38,6 @@ footer {
   gap: 10px;
   font-size: 12px;
 }
-
 footer img {
   align-self: flex-start;
   height: 12px;
@@ -51,7 +48,7 @@ footer img {
 /* COMMONS */
 .fa-heart {
   cursor: pointer;
-  font-size: larger;
+  font-size: 26px;
   padding: 0 20px;
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -63,9 +60,31 @@ footer img {
   background-clip: text;
   transition: 0.5s all;
 }
-
 .fa-heart:hover {
   background-position-y: bottom;
   -webkit-text-stroke-color: transparent;
   transition: 0.5s all;
 }
+
+.pinkbutton {
+  align-self: center;
+  cursor: pointer;
+  margin: 20px;
+  height: 40px;
+  max-width: 300px;
+  padding: 0 20px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
+  color: white;
+  border: none;
+  box-shadow: 0px 5px 5px #ddd;
+  position: relative;
+  top: 0;
+  transition: ease 0.5s;
+}
+.pinkbutton:hover {
+  top: -4px;
+  box-shadow: 0px 5px 5px #aaa;
+}
+
+/*# sourceMappingURL=main.css.map */

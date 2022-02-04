@@ -6,16 +6,19 @@
   padding: 20px;
 }
 
-img {
+.mainpicture {
   width: 100%;
   margin-bottom: -40px;
+  position: sticky;
+  z-index: -1;
 }
 
 main {
   width: 100%;
-  position: absolute;
   background: #f6f6f6;
   border-radius: 40px 40px 0 0;
+  margin-top: -40px;
+  padding-top: 10px;
 }
 
 .title {
@@ -26,57 +29,24 @@ main {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 26px;
   letter-spacing: 1px;
   font-family: "Shrikhand", cursive;
 }
 
 /* MENU ITEMS */
-section {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
 .separator {
   border: solid 2px #9ae2d0;
+  background: #9ae2d0;
   width: 40px;
   margin: 4px 0;
-}
-
-.menu-item {
-  align-self: center;
-  display: flex;
-  align-items: center;
-  background: white;
-  box-shadow: 0px 5px 5px #ddd;
-  box-shadow: 0px 5px 5px #ddd;
-  border-radius: 10px;
-  margin: 10px 0;
-  width: 90vw;
-  overflow: hidden;
-  height: 60px;
-}
-.menu-item-data {
-  display: flex;
-  flex-direction: column;
-  line-height: 24px;
-  flex: 1;
-  padding: 10px;
-}
-.menu-item-desc {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu-item-price {
-  font-weight: bold;
 }
 
 .menu-item-select {
   display: flex;
   justify-content: center;
   position: relative;
+  overflow: hidden;
   background: #9ae2d0;
   color: white;
   font-size: 24px;
@@ -88,15 +58,73 @@ section {
   transition: 0.7s;
 }
 
+.menu-item {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  background: white;
+  box-shadow: 0px 5px 5px #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+  height: 60px;
+  width: 100%;
+  position: relative;
+  animation-name: item-fader;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  margin-top: 30px;
+  opacity: 0;
+}
 .menu-item:hover .menu-item-select {
-  width: 50px;
+  width: 80px;
   transition: 0.7s;
+}
+.menu-item:hover i {
+  transform: rotate(360deg);
+}
+
+section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+section .animation-delay-1 {
+  animation-delay: 0.5s;
+}
+section .animation-delay-2 {
+  animation-delay: 1s;
+}
+
+.menu-item-desc {
+  padding: 10px;
+  flex: 1;
+  overflow: hidden;
+}
+.menu-item-desc p,
+.menu-item-desc h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu-item-price {
+  align-self: flex-end;
+  font-weight: bold;
+  padding: 10px;
 }
 
 .fa-check-circle {
   transition: transform 0.7s ease-in-out;
 }
 
-.menu-item:hover i {
-  transform: rotate(360deg);
+@keyframes item-fader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }
+
+/*# sourceMappingURL=page.css.map */

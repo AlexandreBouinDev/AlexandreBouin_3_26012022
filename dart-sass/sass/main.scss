@@ -71,6 +71,8 @@ footer {
 }
 
 .pinkbutton {
+  display: flex;
+  align-items: center;
   align-self: center;
   cursor: pointer;
   margin: 20px;

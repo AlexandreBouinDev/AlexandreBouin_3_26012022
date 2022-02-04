@@ -11,6 +11,9 @@
 .intro p {
   color: #767676;
 }
+.intro .pinkbutton p {
+  color: white;
+}
 
 /* FONCTIONNEMENT */
 .fonctionnement {
